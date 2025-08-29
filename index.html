@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <section class="p-4 mySec" >
+        <div class="container-fluid">
+            <section class="textt d-flex justify-content-center align-items-center flex-column py-4">
+       <div class="main-txt">
+        <h1 class="font-pac py-4">Bookmarker</h1>
+       </div>
+        <h2 class="py-4 righteous-regular txt-grad"> <i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+ </section>
+        <section id="myForm" class="formm p-4">
+     
+           <div class="mb-3">
+    <label for="InputSite" class="form-label pt-sans-caption-bold"> <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+
+    <input type="text" oninput="validateName()"  class="form-control" id="InputSite" placeholder="Bookmark Name">
+    <p id="alertMsg0" class="alert alert-danger d-none my-2"> Website name must be at least 4 characters long and can only contain letters, numbers, and hyphens.</p>
+    
+  </div>
+  <div class="mb-3">
+    <label for="InputURL" class="form-label pt-sans-caption-bold"> <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+    <input type="url" oninput="validateURL()" class="form-control" id="InputURL" placeholder="Website URL">
+    <p id="alertMsg" class="alert alert-danger d-none my-2">URL must end with '.com'</p>
+  </div>
+  <div class="btnn d-flex justify-content-center py-2">
+        <button   type="submit" class="btn px-5 " id="submit" >Submit</button>
+  </div>
+    
+        </section>
+        </div>
+    </section>
+    <section class="linkss">
+        <div class="container">
+       <div class="table-responsive">
+  <table class="table align-middle">
+    <thead>
+      <tr class="pt-sans-caption-bold">
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </tr>
+     
+    </thead>
+    <tbody id="table-body">
+
+    </tbody>
+  </table>
+</div>
+        </div>      
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

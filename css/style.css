@@ -1,0 +1,110 @@
+body {
+  background-color: #F7ECDE;
+}
+*::selection {
+  background-color: #FEC260;
+  color: black;
+}
+.form-control:focus {
+  border-color: #FEC260; 
+  box-shadow: 0 0 0 0.25rem rgba(254, 194, 96, 0.5);
+}
+
+.font-pac {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  font-style: normal;
+}
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 500;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  font-style: normal;
+}
+.pt-sans-caption-regular {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-caption-bold {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.mySec {
+  background-color: #F7ECDE;
+}
+.txt-grad {
+  background: linear-gradient(45deg, #28a745, #ffc107);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+.btnn button {
+  background-color: #D1512D;
+  color: white;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.btnn {
+  border-bottom: 2px dotted;
+}
+.btnn button:hover{
+  background-color: #BB4120;
+  color: white;
+}
+
+.grn-btn {
+  background-color: #9EB23B;
+  color: white;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.grn-btn:hover{
+color: white;
+background-color: #8A9E23;
+}
+.linkss {
+  background-color: #F7ECDE;
+}
+
+.main-txt {
+  width: 90%;
+  text-align: center;
+  border-bottom: dotted .125rem;
+  display: inline-block;
+  position: relative;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    bottom: 24%;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+h1:hover::after {
+  height: 38%;
+}
